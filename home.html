@@ -4,14 +4,211 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Acme|Alegreya|Alegreya+Sans|Anton|Archivo|Archivo+Black|Archivo+Narrow|Arimo|Arvo|Asap|Asap+Condensed|Bitter|Bowlby+One+SC|Bree+Serif|Cabin|Cairo|Catamaran|Crete+Round|Crimson+Text|Cuprum|Dancing+Script|Dosis|Droid+Sans|Droid+Serif|EB+Garamond|Exo|Exo+2|Faustina|Fira+Sans|Fjalla+One|Francois+One|Gloria+Hallelujah|Hind|Inconsolata|Indie+Flower|Josefin+Sans|Julee|Karla|Lato|Libre+Baskerville|Libre+Franklin|Lobster|Lora|Mada|Manuale|Maven+Pro|Merriweather|Merriweather+Sans|Montserrat|Montserrat+Subrayada|Mukta+Vaani|Muli|Noto+Sans|Noto+Serif|Nunito|Open+Sans|Open+Sans+Condensed:300|Oswald|Oxygen|PT+Sans|PT+Sans+Caption|PT+Sans+Narrow|PT+Serif|Pacifico|Passion+One|Pathway+Gothic+One|Play|Playfair+Display|Poppins|Questrial|Quicksand|Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Ropa+Sans|Rubik|Saira|Saira+Condensed|Saira+Extra+Condensed|Saira+Semi+Condensed|Sedgwick+Ave|Sedgwick+Ave+Display|Shadows+Into+Light|Signika|Slabo+27px|Source+Code+Pro|Source+Sans+Pro|Spectral|Titillium+Web|Ubuntu|Ubuntu+Condensed|Varela+Round|Vollkorn|Work+Sans|Yanone+Kaffeesatz|Zilla+Slab|Zilla+Slab+Highlight"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <nav id="navBar">Ketan</nav>
-    <section id="homeSection1">Muskan</section>
+    <!-- <object data="index.html"></object> -->
+    <nav id="navBar"></nav>
+    <section id="homeSection1">
+      <section>
+        <div id="homeSection1Header">
+          <h1>
+            Discover
+            <br />
+            A new Place
+          </h1>
+          <p>
+            Find great places to stay, eat, shop, or visit from local experts
+          </p>
+        </div>
+      </section>
+      <div id="homeSection1search">
+        <div id="homeSection1tab">
+          <button id="homeSection1button1" class="homeSection1Active">
+            Flight
+          </button>
+          <button id="homeSection1button2">Hotel</button>
+          <button id="homeSection1button3">Car Rent</button>
+        </div>
+        <div id="Section1form1" class="homeSection1form">
+          <form>
+            <div>
+              <label>From</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> my_location </span>
+                <input type="text" name="from" placeholder="From" />
+              </div>
+            </div>
+            <div>
+              <label>Where</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> location_on </span>
+                <input type="text" name="where" placeholder="Where" />
+              </div>
+            </div>
+            <div>
+              <label>Check In</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> location_on </span>
+                <input
+                  type="text"
+                  name="checkIn"
+                  placeholder="Check In"
+                  onfocus="(this.type='date')"
+                />
+              </div>
+            </div>
+            <div>
+              <label>Check Out</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> location_on </span>
+                <input
+                  type="text"
+                  name="checkOut"
+                  placeholder="Check Out"
+                  onfocus="(this.type='date')"
+                />
+              </div>
+            </div>
+            <div>
+              <label>Travelers</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> keyboard_arrow_down </span>
+                <select class="selectOpt">
+                  <option selected>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="homeSection1Submit">
+              <div class="homeSection1formInput">
+                <input type="submit" name="submit" value="Search" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="Section1form2" class="homeSection1form">
+          <form>
+            <div>
+              <label>Check In</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> location_on </span>
+                <input
+                  type="text"
+                  name="checkIn"
+                  placeholder="Check In"
+                  onfocus="(this.type='date')"
+                />
+              </div>
+            </div>
+            <div>
+              <label>Check Out</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> location_on </span>
+                <input
+                  type="text"
+                  name="checkOut"
+                  placeholder="Check Out"
+                  onfocus="(this.type='date')"
+                />
+              </div>
+            </div>
+            <div>
+              <label>Guest</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> keyboard_arrow_down </span>
+                <select class="selectOpt">
+                  <option selected>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="homeSection1Submit">
+              <div class="homeSection1formInput">
+                <input type="submit" name="submit" value="Search" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="Section1form3" class="homeSection1form">
+          <form>
+            <div>
+              <label>Where</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> location_on </span>
+                <input type="text" name="where" placeholder="Where" />
+              </div>
+            </div>
+            <div>
+              <label>Check In</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> location_on </span>
+                <input
+                  type="text"
+                  name="checkIn"
+                  placeholder="Check In"
+                  onfocus="(this.type='date')"
+                />
+              </div>
+            </div>
+            <div>
+              <label>Check Out</label>
+              <div class="homeSection1formInput">
+                <span class="material-icons"> location_on </span>
+                <input
+                  type="text"
+                  name="checkOut"
+                  placeholder="Check Out"
+                  onfocus="(this.type='date')"
+                />
+              </div>
+            </div>
+            <div class="homeSection1Submit">
+              <div class="homeSection1formInput">
+                <input type="submit" name="submit" value="Search" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <section id="homeSection2">Shahrukh</section>
     <section id="homeSection3">Shahrukh</section>
-    <section id="homeSection4">Muskan</section>
+    <section id="homeSection4">
+      <div id="homeSection4Main">
+        <div id="homeSection4img"></div>
+        <div id="homeSection4Content">
+          <h2>The Best Travel Agency</h2>
+          <p>
+            On her way she met a copy. The copy warned the Little Blind Text,
+            that where it came from it would have been rewritten a thousand
+            times and everything that was left from its origin would be the word
+            "and" and the Little Blind Text should turn around and return to its
+            own, safe country. But nothing the copy said could convince her and
+            so it didn’t take long until a few insidious Copy Writers ambushed
+            her, made her drunk with Longe and Parole and dragged her into their
+            agency, where they abused her for their.
+          </p>
+        </div>
+      </div>
+    </section>
     <section id="homeSection5"></section>
     <section id="homeSection6"></section>
     <section id="homeSection7"></section>
@@ -21,5 +218,6 @@
     <section id="homeSection11"></section>
     <section id="homeSection12">Chandu</section>
     <footer id="homeFooter">Chandu</footer>
+    <script src="home.js" type="text/javascript"></script>
   </body>
 </html>
