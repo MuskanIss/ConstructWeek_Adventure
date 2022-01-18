@@ -1,0 +1,206 @@
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vw;
+  margin: 0px;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.7;
+}
+#homeSection1 {
+  position: relative;
+}
+#homeSection1 section {
+  min-height: 100vh;
+  background-image: url("https://preview.colorlib.com/theme/adventure2/images/xbg_1.jpg.pagespeed.ic.LDfX_11H1u.webp");
+  margin: 0px;
+  min-width: 100vw;
+  background-size: cover;
+}
+#homeSection1Header {
+  padding: 10%;
+}
+#homeSection1 h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 80px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0px 0px 24px;
+  color: #fff;
+}
+#homeSection1Header p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0px 0px 16px;
+}
+#homeSection1search {
+  position: absolute;
+  top: 67%;
+  right: 0%;
+  width: 80%;
+}
+#homeSection1tab {
+  display: flex;
+  justify-content: center;
+}
+#homeSection1tab button {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 18px;
+  padding: 10px 30px;
+}
+#homeSection1tab button:hover {
+  background-color: #f9be37;
+  color: #fff;
+}
+.homeSection1Active {
+  background-color: #f9be37 !important;
+  color: #fff !important;
+}
+.homeSection1form {
+  background-color: #fff;
+  padding: 35px 40px 55px;
+}
+.homeSection1form div input {
+  width: 100%;
+}
+.homeSection1form form {
+  display: flex;
+  justify-content: space-between;
+}
+.homeSection1form form div {
+  width: 70%;
+}
+.homeSection1formInput {
+  display: flex;
+  margin-top: 8px;
+  border: 1px solid #d9d9d9;
+  padding: 6% 5% 6% 5%;
+}
+.homeSection1formInput input,
+.homeSection1formInput select {
+  border: none;
+  appearance: none;
+}
+.homeSection1formInput select {
+  width: 50%;
+}
+select option:hover {
+  box-shadow: 0 0 10px 100px #af2f89 inset;
+}
+.homeSection1formInput input:focus,
+.homeSection1formInput select:focus {
+  outline: none;
+}
+.material-icons {
+  color: #f9be37;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+}
+.homeSection1Submit div > input {
+  color: #fff;
+  background-color: transparent;
+  font-size: larger;
+}
+.homeSection1Submit div {
+  background-color: #f9be37;
+  position: absolute;
+  border: none;
+  bottom: 0px;
+  padding: 6%;
+}
+.homeSection1Submit {
+  position: relative;
+}
+#Section1form2,
+#Section1form3 {
+  display: none;
+}
+#homeSection4Main {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+}
+#homeSection4img {
+  background-image: url("https://preview.colorlib.com/theme/adventure2/images/xabout.jpg.pagespeed.ic.-fxWoNPrL_.webp");
+  width: 50%;
+  background-size: cover;
+}
+#homeSection4Content {
+  width: 30%;
+  padding: 5% 15% 5% 5%;
+}
+#homeSection4Content h2 {
+  margin-top: 0px;
+  font-family: "Abril Fatface", cursive;
+  font-size: 40px;
+  font-weight: normal;
+}
+#homeSection4Content p {
+  color: rgb(140 130 130);
+  font-size: 15px;
+  word-spacing: 5px;
+}
+@media screen and (max-width: 1000px) {
+  #homeSection1 h1 {
+    font-size: 40px;
+  }
+  #homeSection1tab button {
+    color: black;
+  }
+}
+@media screen and (max-width: 700px) {
+  #homeSection1search {
+    position: relative;
+    width: 100%;
+  }
+  #homeSection1tab {
+    display: block;
+    margin: 0%;
+  }
+  #homeSection1tab button {
+    width: 100%;
+    margin: 0px;
+  }
+  .homeSection1form form {
+    display: block;
+  }
+  .homeSection1form form div {
+    margin-bottom: 15px;
+    padding-right: 0%;
+    width: 95%;
+  }
+  .homeSection1formInput {
+    padding: 10px;
+  }
+  .homeSection1formInput input {
+    width: 100%;
+  }
+  .homeSection1Submit div {
+    position: relative;
+    padding: 10px;
+  }
+  #homeSection4Main {
+    display: block;
+  }
+  #homeSection4img {
+    width: 100%;
+    height: 50vh;
+  }
+  #homeSection4Content {
+    width: 90%;
+    padding: 5%;
+  }
+  #homeSection4Content h2 {
+    font-size: 28px;
+  }
+}
