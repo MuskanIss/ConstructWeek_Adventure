@@ -128,7 +128,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #homeSection4Main {
   display: flex;
   justify-content: space-around;
-  height: 100vh;
 }
 #homeSection4img {
   background-image: url("https://preview.colorlib.com/theme/adventure2/images/xabout.jpg.pagespeed.ic.-fxWoNPrL_.webp");
@@ -150,6 +149,58 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 15px;
   word-spacing: 5px;
 }
+#homeSection7 {
+  background-image: url("https://preview.colorlib.com/theme/adventure2/images/xbg_1.jpg.pagespeed.ic.LDfX_11H1u.webp");
+  width: 100%;
+  background-attachment: fixed;
+}
+#homeSection7flex {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 70%;
+  height: 100%;
+  z-index: 0;
+  background-color: #08c29a;
+  opacity: 0.9;
+  padding: 7% 15%;
+}
+#homeSection7flex div div {
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+  font-size: 40px;
+  color: #fff;
+  margin: 0%;
+}
+#homeSection7flex p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0px;
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+.ftco-animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+.ftco-animate {
+  opacity: 0;
+  visibility: hidden;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 60px, 0);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+}
 @media screen and (max-width: 1000px) {
   #homeSection1 h1 {
     font-size: 40px;
@@ -157,8 +208,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   #homeSection1tab button {
     color: black;
   }
+  #homeSection7 {
+    background-attachment: scroll;
+    background-position: center;
+  }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
+  #homeSection1 section {
+    text-align: center;
+    position: relative;
+  }
+  #homeSection1Header {
+    position: absolute;
+    top: 20%;
+  }
   #homeSection1search {
     position: relative;
     width: 100%;
@@ -202,6 +265,43 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   #homeSection4Content h2 {
     font-size: 28px;
+  }
+  #homeSection7flex {
+    display: block;
+  }
+}
+#homeSection2 {
+  background-color: rgb(246, 254, 255);
+}
+#homeSection2 p {
+  font-size: 20px;
+  color: rgb(95, 95, 95);
+  line-height: 30px;
+}
+
+#homeSection2 orange {
+  color: orange;
+}
+@media screen and (max-width: 800px) {
+  #homeSection2 > div {
+    display: grid;
+    grid-template-rows: repeat(3, 25%);
+    grid-row-gap: 40px;
+    padding-top: 15%;
+    padding-bottom: 10%;
+  }
+  #homeSection2 > div > div {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 800px) {
+  #homeSection2 > div {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-column-gap: 40px;
+    margin-left: 10%;
+    padding: 70px 0 70px 0;
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
