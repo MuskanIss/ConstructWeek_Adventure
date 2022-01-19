@@ -44,7 +44,16 @@ function navbar() {
       "rgba(255, 255, 255, 0.5)";
   }
 }
-numberLoad();
+window.addEventListener("scroll", checkSection7);
+function checkSection7() {
+  var position = document
+    .getElementById("homeSection7")
+    .getBoundingClientRect();
+  if (position.top <= window.innerHeight) {
+    numberLoad();
+    window.removeEventListener("scroll", checkSection7);
+  }
+}
 function numberLoad() {
   var num1 = parseInt(homeSection7_1.textContent.split(",").join(""));
   var num2 = parseInt(homeSection7_2.textContent.split(",").join(""));
