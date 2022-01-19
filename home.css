@@ -150,34 +150,49 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 15px;
   word-spacing: 5px;
 }
-#homeSection6 h2 {
+#homeSection6 h2,
+#homeSection8 h2,
+#homeSection10 h2 {
   font-size: 40px;
   font-weight: normal;
   font-family: "Abril Fatface", cursive;
   text-align: center;
 }
+#homeSection10 {
+  width: 90%;
+  padding: 0% 5%;
+}
 .homeSection6flex {
   display: flex;
-  flex-basis: 0;
   flex-wrap: wrap;
+  width: 96%;
+  margin: 2%;
+  max-width: 100%;
 }
 .homeSection6flexreverse {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 0;
+  flex-grow: 1;
   padding: 2%;
-  width: 20%;
 }
 .homeSection6flexreverse:nth-child(2n) {
   flex-direction: column-reverse;
 }
-.homeSection6flexreverse > div {
+.homeSection6flexreverse > div:first-child {
   width: 100%;
-  height: 100%;
   height: 300px;
+  background-size: cover;
+  background-position: center center;
 }
 .homeSection6flexreverse img {
   height: 100%;
   width: 100%;
+}
+.homeSection6flexreverse:hover .chain div {
+  display: flex;
 }
 .homeSection6flexreverse > div:nth-child(2) {
   padding: 5%;
@@ -224,6 +239,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: none;
   color: #fff;
   padding: 3px 5px;
+}
+.chain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chain div {
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+small {
+  font-size: small;
 }
 /* Common css for some sections -end*/
 #homeSection7 {
@@ -327,6 +360,23 @@ nav .menu-btn i {
 input[type="checkbox"] {
   display: none;
 }
+#homeSection2 {
+  background: #f8faff;
+}
+#homeSection2 h1 {
+  margin: 8px;
+}
+#homeSection2 p {
+  font-size: 16px;
+  color: rgb(95, 95, 95);
+  line-height: 30px;
+  margin: 0px;
+}
+
+#homeSection2 orange {
+  font-weight: 200;
+  color: orange;
+}
 @media (max-width: 1000px) {
   nav {
     padding: 0 40px 0 50px;
@@ -406,6 +456,16 @@ input[type="checkbox"] {
     background-attachment: scroll;
     background-position: center;
   }
+  #homeSection6 h2,
+  #homeSection8 h2,
+  #homeSection10 h2 {
+    width: 40%;
+    margin: auto;
+  }
+  .homeSection6flexreverse {
+    flex: 0 0 45%;
+    max-width: 50%;
+  }
 }
 @media screen and (max-width: 750px) {
   #homeSection1 section {
@@ -463,23 +523,21 @@ input[type="checkbox"] {
   #homeSection7flex {
     display: block;
   }
-}
-#homeSection2 {
-  background: #f8faff;
-}
-#homeSection2 h1 {
-  margin: 8px;
-}
-#homeSection2 p {
-  font-size: 16px;
-  color: rgb(95, 95, 95);
-  line-height: 30px;
-  margin: 0px;
-}
-
-#homeSection2 orange {
-  font-weight: 200;
-  color: orange;
+  #homeSection6 h2,
+  #homeSection8 h2,
+  #homeSection10 h2 {
+    width: 100;
+    font-size: x-large;
+    margin: 2% auto;
+  }
+  .homeSection6flexreverse {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 100%;
+  }
+  .homeSection6flexreverse:nth-child(2n) {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 800px) {
   #homeSection2 > div {
@@ -557,7 +615,8 @@ input[type="checkbox"] {
     font-family: "Abril Fatface", cursive;
     font-size: 40px;
     width: 40%;
-    margin-left: 40%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10%;
   }
   #homeSection3 > div {
@@ -624,4 +683,4 @@ input[type="checkbox"] {
 .AllSection1 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
-
+}
