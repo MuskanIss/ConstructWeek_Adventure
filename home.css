@@ -503,3 +503,109 @@ input[type="checkbox"] {
     padding: 70px 0 70px 0;
   }
 }
+@media screen and (max-width: 1600px) {
+  #homeSection3 img {
+    width: 102%;
+    height: 280px;
+  }
+  .homeSection3-images-div {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-column-gap: 3%;
+    margin-left: 13%;
+  }
+  #homeSection3 {
+    margin-top: 7%;
+    margin-bottom: 4%;
+  }
+  #homeSection3 h1 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 40px;
+  }
+  .homeSection3-first-heading-div {
+    text-align: center;
+    margin-bottom: 5%;
+    color: rgb(53, 53, 53);
+    letter-spacing: 1px;
+    width: 100%;
+  }
+  .homeSection3-images-div h2 {
+    position: relative;
+    bottom: 140px;
+    height: 85px;
+    width: 95%;
+    background-color: white;
+    color: rgb(36, 36, 36);
+    margin-left: 10px;
+    font-family: "Abril Fatface", cursive;
+    font-size: 160%;
+    text-align: center;
+    padding-top: 13px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  #homeSection3 img {
+    width: 240px;
+    height: 300px;
+  }
+  .homeSection3-images-div {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+  }
+  #homeSection3 h1 {
+    font-family: "Abril Fatface", cursive;
+    font-size: 40px;
+    width: 40%;
+    margin-left: 40%;
+    margin-bottom: 10%;
+  }
+  #homeSection3 > div {
+    margin-top: 10%;
+  }
+  .homeSection3-images-div h2 {
+    background-color: white;
+    color: rgb(20, 20, 20);
+    font-family: "Abril Fatface", cursive;
+    position: relative;
+    bottom: 155px;
+    left: 20px;
+    font-size: 190%;
+    width: 60%;
+    height: 100px;
+    text-align: center;
+    padding: 7px 15px 7px 15px;
+  }
+  .homeSection3-images-div > div {
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .homeSection3-images-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .homeSection3-images-div > div {
+    margin-top: -50px;
+  }
+  .homeSection3-images-div h2 {
+    position: relative;
+    left: 60px;
+    bottom: 140px;
+  }
+  #homeSection3 img {
+    width: 500px;
+  }
+  #homeSection3 h1 {
+    margin: auto;
+    width: max-content;
+    font-size: x-large;
+  }
+  .homeSection3-first-heading-div {
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  #homeSection3 {
+    margin-top: 100px;
+  }
+}
