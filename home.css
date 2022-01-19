@@ -5,6 +5,9 @@ body {
   margin: 0px;
   font-family: "Poppins", Arial, sans-serif;
   line-height: 1.7;
+  font-size: 16px;
+  font-weight: 300;
+  color: #666666;
 }
 #homeSection1 {
   position: relative;
@@ -90,9 +93,6 @@ body {
 .homeSection1formInput select {
   width: 50%;
 }
-select option:hover {
-  box-shadow: 0 0 10px 100px #af2f89 inset;
-}
 .homeSection1formInput input:focus,
 .homeSection1formInput select:focus {
   outline: none;
@@ -144,11 +144,88 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 40px;
   font-weight: normal;
 }
+
 #homeSection4Content p {
   color: rgb(140 130 130);
   font-size: 15px;
   word-spacing: 5px;
 }
+#homeSection6 h2 {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Abril Fatface", cursive;
+  text-align: center;
+}
+.homeSection6flex {
+  display: flex;
+  flex-basis: 0;
+  flex-wrap: wrap;
+}
+.homeSection6flexreverse {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 20%;
+}
+.homeSection6flexreverse:nth-child(2n) {
+  flex-direction: column-reverse;
+}
+.homeSection6flexreverse > div {
+  width: 100%;
+  height: 100%;
+  height: 300px;
+}
+.homeSection6flexreverse img {
+  height: 100%;
+  width: 100%;
+}
+.homeSection6flexreverse > div:nth-child(2) {
+  padding: 5%;
+  width: 90%;
+}
+.homeSection6h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+/* Common css for some sections */
+.floatRight {
+  font-weight: 400;
+  font-size: 18px;
+  color: #2f89fc;
+  float: right;
+}
+.rating {
+  margin-top: 0px;
+  font-size: 10px;
+}
+.rating span {
+  font-size: small;
+}
+.margin0 {
+  margin-top: 0px;
+}
+.paraSmall {
+  font-size: small;
+}
+.line {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.flexButton {
+  display: flex;
+  justify-content: space-between;
+}
+.flexButton span {
+  color: #666666;
+  font-size: 14px;
+}
+.buttonFloat {
+  background-color: #08c299;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  padding: 3px 5px;
+}
+/* Common css for some sections -end*/
 #homeSection7 {
   background-image: url("https://preview.colorlib.com/theme/adventure2/images/xbg_1.jpg.pagespeed.ic.LDfX_11H1u.webp");
   width: 100%;
@@ -271,15 +348,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 #homeSection2 {
-  background-color: rgb(246, 254, 255);
+  background: #f8faff;
+}
+#homeSection2 h1 {
+  margin: 8px;
 }
 #homeSection2 p {
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(95, 95, 95);
   line-height: 30px;
+  margin: 0px;
 }
 
 #homeSection2 orange {
+  font-weight: 200;
   color: orange;
 }
 @media screen and (max-width: 800px) {

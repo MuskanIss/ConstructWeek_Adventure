@@ -5,7 +5,17 @@ var homeSection7_1 = document.querySelector("#homeSection7_1");
 var homeSection7_2 = document.querySelector("#homeSection7_2");
 var homeSection7_3 = document.querySelector("#homeSection7_3");
 var homeSection7_4 = document.querySelector("#homeSection7_4");
-numberLoad();
+document;
+window.addEventListener("scroll", checkSection7);
+function checkSection7() {
+  var position = document
+    .getElementById("homeSection7")
+    .getBoundingClientRect();
+  if (position.top <= window.innerHeight) {
+    numberLoad();
+    window.removeEventListener("scroll", checkSection7);
+  }
+}
 function numberLoad() {
   var num1 = parseInt(homeSection7_1.textContent.split(",").join(""));
   var num2 = parseInt(homeSection7_2.textContent.split(",").join(""));
