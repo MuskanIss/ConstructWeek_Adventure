@@ -13,6 +13,7 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -22,8 +23,22 @@
     <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <object data="navbar.html"></object>
-    <nav id="navBar"></nav>
+    <!-- <object data="navbar.html"></object> -->
+    <nav id="navBar">
+      <div class="logo">Adventures</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Places</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
     <section id="homeSection1">
       <section>
         <div id="homeSection1Header">

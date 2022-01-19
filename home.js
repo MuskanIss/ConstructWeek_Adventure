@@ -5,7 +5,45 @@ var homeSection7_1 = document.querySelector("#homeSection7_1");
 var homeSection7_2 = document.querySelector("#homeSection7_2");
 var homeSection7_3 = document.querySelector("#homeSection7_3");
 var homeSection7_4 = document.querySelector("#homeSection7_4");
-document;
+window.addEventListener("resize", navbar);
+window.addEventListener("scroll", navbar);
+function navbar() {
+  var position = document
+    .getElementById("homeSection1")
+    .getBoundingClientRect();
+  if (position.bottom < 0) {
+    document.getElementById("navBar").style.position = "fixed";
+    document.getElementById("navBar").style.backgroundColor = "white";
+    var menu = window.getComputedStyle(document.querySelector(".menu-btn i"));
+    if (menu.display == "block") {
+      document.querySelector("nav ul").style.backgroundColor = "white";
+    }
+    document.querySelector(".logo").style.color = "black";
+    var li = document.querySelectorAll("nav ul li a");
+    for (var i = 0; i < li.length; i++) {
+      li[i].style.color = "black";
+    }
+    document.querySelector("nav ul li a.active").style.color = "#f9be37";
+  } else {
+    document.getElementById("navBar").style.position = "absolute";
+    document.getElementById("navBar").style.backgroundColor = "transparent";
+    var menu = window.getComputedStyle(document.querySelector(".menu-btn i"));
+    if (menu.display == "block") {
+      document.querySelector("nav ul").style.backgroundColor = "black";
+      document.getElementById("navBar").style.backgroundColor = "black";
+    } else {
+      document.getElementById("navBar").style.backgroundColor = "transparent";
+      document.querySelector("nav ul").style.backgroundColor = "transparent";
+    }
+    document.querySelector(".logo").style.color = "#fff";
+    var li = document.querySelectorAll("nav ul li a");
+    for (var i = 0; i < li.length; i++) {
+      li[i].style.color = "#fff";
+    }
+    document.querySelector("nav ul li a.active").style.color =
+      "rgba(255, 255, 255, 0.5)";
+  }
+}
 window.addEventListener("scroll", checkSection7);
 function checkSection7() {
   var position = document
