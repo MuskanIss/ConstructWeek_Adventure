@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footerbottom.css">
+    <style>
+         .containers{
+            width: 100%;
+            background-color: rgb(48, 180, 180); 
+           
+        }
+        .rows{
+           width: 700px;
+            margin: auto;
+            padding-top: 20px;
+            color: white;
+        }
+        h5{
+            text-align: center;
+            font-size: 50px;
+        }
+        #multi{
+            font-size: 20px;
+            text-align: center;
+
+            
+        }
+        .subscribe{
+            /* padding-left: 30px; */
+            display: flex;
+            justify-content: center;
+           
+            
+            
+        }
+        #names, #submit{
+            margin-top: 40px;
+            padding:18px;
+            justify-content: space-around;
+            background-color:rgb(48, 180, 180);
+            color: white;
+            border: 0.1px solid white;
+            margin-bottom: 80px;
+        }
+        /* #names{
+            padding-right: 100px;
+           
+        } */
+        #names{
+             width: 250px;
+        }
+        ::placeholder{
+            color: rgb(187, 241, 241);
+            font-size: 15px;
+        }
+        #submit{
+            font-size: 20px;
+        }
+
+
+
+        .para{
+            font-size:19px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+            background-color: rgb(26, 24, 24);
+        }
+        .row{
+            padding-top:200px;
+            background-color: rgb(26, 24, 24);
+            /* margin: auto; */
+            display: flex;
+            justify-content:space-between;
+            color: blanchedalmond;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* font-size: 12px; */
+            font-weight:calc();
+            /* padding:100px 150px; */
+            padding-left:5% ;
+            padding-right: 5%;
+        }
+        .col{
+            /* border: 1px solid red; */
+            font-display:inherit;
+        }
+        .para{
+            padding-top: 15px;
+        }
+        .para a{
+            font-size: 20px;
+            
+        }
+        ul{
+            font-size: 19px;
+        }
+        .c_1{
+            width: 22%
+        }
+        .c_2,.c_3{
+            width: 20%
+        }
+        .c_4{
+            width: 25%
+        }
+        .block{
+            padding: 0.5rem;
+            display: block;
+            text-align:left;
+            margin-left: -45px;
+        }
+        .list{
+            text-align: left;
+            float: left;
+        }
+        .icon{
+            font-family:'icon';
+            
+        }
+        /* .list > ul:hover{
+            background-color: white;
+        } */
+        a{
+            text-decoration: None;
+             color: blanchedalmond;
+            font-family:sans-serif;
+        }
+        img{
+            height: 50px;
+            width: 50px;
+        }
+        .icon{
+            border-radius: 50px;
+            margin: 5px;  
+        }
+        .gmail{
+            border: 20px;
+        }
+        h2, h3{
+            color: white;
+        }
+        .location, .phone ,.gmail{
+           border-radius: 200px;
+            /* padding-right: 30px; */
+        }
+        .wholesub{
+            padding-top: 18px;
+            display: flex;
+
+        }
+        .fake{
+            margin-top: 10px;
+        }
+        .heart{
+            height: 25px;
+            width: 25px;
+            padding-top: 10px;
+            
+        }
+        .lastpara{
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        @media only screen and (min-width:0px) and (max-width:765px){
+            .rows{
+                
+                padding: auto;
+                margin: auto;
+                height: auto;
+                width: auto;
+            }
+            #names,#submit {
+                
+               padding:0px 0px 0px 0px;
+               margin:auto;
+               height:50px
+               
+            }
+            #names {
+                width:45%;
+                margin-right: 0px;
+            }
+            #submit {
+                margin-left: 0px;
+
+                width:40%
+            }
+            .subscribe{
+                width: auto;
+                display: flex;
+            }
+
+            #bottom,.row{
+                display:grid;
+                grid-template-columns: repeat(1,300px);
+                grid-template-rows: repeat(1,300px); 
+                padding-left: 20px;
+                width: auto;
+
+                
+            }
+            .col{
+                width: auto;
+                height: auto;
+            }
+            .container {
+                margin-right: 0px;
+            }
+
+        }
+        /* @media only screen and (min-width:368px) and (max-width:768px){
+
+        } */
+
+                     
+    </style>
+</head>
+<body>
+   
+    <div class="containers">
+        <div class="rows" >
+            <h5>Subscribe to our Newsletter</h5>
+            <p id="multi">Far for away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in </p>
+            <div class="inputfor">
+                <!-- <form action="#"> -->
+                    <div class="subscribe">
+                        <input type="text" name="" id="names" placeholder="Enter email address">
+                        <input type="submit" name="" id="submit" value="Subscribe">
+
+                    </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    
+    <section class="footer">
+        <div class="container">
+            <div class="row" id="bottom">
+                <div class="col c_1">
+                    <div class="widget">
+                        <h2 class="footheadings" >Adventure</h2>
+                        <p class="para">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Twitter-logo-transparent-PNG.png" alt="" class="twitter icon">
+                            <img src="https://icon-library.com/images/black-facebook-icon-png/black-facebook-icon-png-0.jpg " alt="" class="facebook icon">
+                            <img src="https://image.similarpng.com/very-thumbnail/2020/07/Instagram-black-and-white-logo-vector-png-(5).png" alt="" class="instagram icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="col c_2">
+                    <div class="widget -2">
+                        <h2 class="footheadings _2">Information</h2>
+                        <ul class="list l_1" type="None" >  
+                            <li>
+                                <a href="#" class="block">About us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">Online enquiry</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">Call Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">General enquires</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">Booking Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">Privacy and Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">Refund Policy</a>
+                            </li>                           
+                        </ul>                     
+                    </div>
+                </div>
+                <div class="col c_3">
+                    <div class="widget-3">
+                        <h2 class="footheadings h_3">Experience</h2>
+                        <ul class="list l_2" type="None">
+                            <li>
+                                <a href="#" class="block">Beach</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">Adventure</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">Wildlife</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">Honeymoon</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">Nature</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block">Party</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col c_4">
+                    <div class="widget-4">
+                        <h2>Have a Questions?</h2>
+                        <ul type="None" >
+                            <li>
+                                <div class="wholesub">
+                                    <img src="https://us.123rf.com/450wm/lililia/lililia1711/lililia171100435/90687353-vector-flat-icon-of-geolocation-on-black-background.jpg?ver=6" class="block location"/>
+                                <p class="fake">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                                </div>                                                     
+                            </li>
+                            <li>
+                                <div class="wholesub">
+                                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7hMZQfigOJp02co0KF2sBJYEY2XXBcl-fQ&usqp=CAU" class="block phone"></a>
+                                    <a href="#"><p>+2 3923929 210</p></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wholesub">
+                                    <a href="#"><img src="https://t3.ftcdn.net/jpg/01/76/14/48/360_F_176144809_ZuZHUmtmaPafTOa8jsGZmOBCpqH1Sa7r.jpg" alt="" class="block gmail"></a>
+                                    <a href="#" ><p>info@yourdomain.com</p></a>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="lastpara">Copyright @2022 All rights reserved | This template is made with <img src="https://icodrops.com/wp-content/uploads/2020/12/Whiteheart_logo.png" alt="" class="heart">by <a href="#">Colorlib</a></p>
+            </div>
+        </div>
+    </section>         
+</body>
+</html>
+<script>
+    document.querySelector("li").addEventListener("mouseenter", function(){
+        let li = document.getElementById("li")
+           li.style.backgroundColor = "white";
+    })
+</script>
