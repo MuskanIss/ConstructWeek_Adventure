@@ -1,230 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Acme|Alegreya|Alegreya+Sans|Anton|Archivo|Archivo+Black|Archivo+Narrow|Arimo|Arvo|Asap|Asap+Condensed|Bitter|Bowlby+One+SC|Bree+Serif|Cabin|Cairo|Catamaran|Crete+Round|Crimson+Text|Cuprum|Dancing+Script|Dosis|Droid+Sans|Droid+Serif|EB+Garamond|Exo|Exo+2|Faustina|Fira+Sans|Fjalla+One|Francois+One|Gloria+Hallelujah|Hind|Inconsolata|Indie+Flower|Josefin+Sans|Julee|Karla|Lato|Libre+Baskerville|Libre+Franklin|Lobster|Lora|Mada|Manuale|Maven+Pro|Merriweather|Merriweather+Sans|Montserrat|Montserrat+Subrayada|Mukta+Vaani|Muli|Noto+Sans|Noto+Serif|Nunito|Open+Sans|Open+Sans+Condensed:300|Oswald|Oxygen|PT+Sans|PT+Sans+Caption|PT+Sans+Narrow|PT+Serif|Pacifico|Passion+One|Pathway+Gothic+One|Play|Playfair+Display|Poppins|Questrial|Quicksand|Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Ropa+Sans|Rubik|Saira|Saira+Condensed|Saira+Extra+Condensed|Saira+Semi+Condensed|Sedgwick+Ave|Sedgwick+Ave+Display|Shadows+Into+Light|Signika|Slabo+27px|Source+Code+Pro|Source+Sans+Pro|Spectral|Titillium+Web|Ubuntu|Ubuntu+Condensed|Varela+Round|Vollkorn|Work+Sans|Yanone+Kaffeesatz|Zilla+Slab|Zilla+Slab+Highlight"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="home.css" />
     <style>
-        /* .main {
-            display: flex  ; */
-            /* height:900px;
-            width:1000px; */
-            /* position: relative; */
-            /* display: block;
-    
-        /* } */ 
-        /* .contactimg{
-            width:1200px;
-            height: 800px;
+      .contactimg {
+        height: 700px;
+        width: 100%;
+      }
+      .home {
+        margin-top: -450px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-right: 20px;
+        text-transform: uppercase;
+      }
+      .blog {
+        display: flex;
+        justify-content: center;
 
-        } */
-        /* .home{
-            margin: -600px;
-            position:center;
-        } */
-        /* .container{
-            width: 100%;
-            height: 100%;
-        } */
-        .contactimg{
-            height: 700px;
-            width:100%;
-        }
-        .home{
-            margin-top: -450px;
-            text-align: center;
-            color: white;
-            font-size: 18px;
-            letter-spacing: 1px;
-            margin-right: 20px;
-            text-transform: uppercase ;
+        z-index: 99;
+      }
+      .main > h1 {
+        justify-content: center;
+        text-transform: uppercase;
+        margin-top: -400px;
+        text-align: center;
+        font-size: 100px;
+        color: white;
+      }
+      .home > a {
+        text-decoration: none;
+        color: white;
+      }
+      .container1 {
+        margin-top: 50px;
+      }
+      .gather {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        font-size: 14px;
+        margin-bottom: 50px;
+        width: 100vw;
+      }
+      .container1 > h1 {
+        font-family: inherit;
+        font-weight: 400px;
+        line-height: 1.5;
+      }
+      .information {
+        color: rgba(0, 0, 0, 0.705);
+        font-weight: 300;
+        font-family: inherit;
+      }
+      .information > a {
+        text-decoration: None;
+        color: rgba(0, 0, 0, 0.705);
+      }
+      .googlemap {
+        display: flex;
+        margin-bottom: 100px;
+        justify-content: space-around;
+      }
+      .world {
+        height: auto;
+        width: 50vw;
+      }
+      #named {
+        color: white;
+        border: 0.1px solid black;
+        height: 50px;
+        width: 600px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+      }
+      #message {
+        border: 0.1px solid black;
+        width: 600px;
+        margin-left: 50px;
+        height: 220px;
+        margin-bottom: 20px;
+      }
+      ::placeholder {
+        font-size: 18px;
+        padding-left: 10px;
+      }
+      #message::placeholder {
+        padding-top: -400px;
+      }
 
-
+      .lastmessage {
+        border-radius: 50px;
+        height: 35px;
+        width: 230px;
+        margin-left: 50px;
+        background-color: orange;
+        text-align: center;
+        padding-top: 15px;
+      }
+      .lastmessage > a {
+        text-decoration: None;
+        color: white;
+        font-size: 20px;
+      }
+      #mapForm {
+        width: 45vw;
+      }
+      #mapForm input {
+        width: 70%;
+      }
+      @media (max-width: 768px) {
+        .gather {
+          display: block;
         }
-        .blog{
-            display: flex;
-           justify-content: center;
-           
-            
-            z-index: 99;
+        .googlemap {
+          display: flex;
+          flex-direction: column-reverse;
         }
-        .main > h1 {
-            justify-content: center;
-            text-transform: uppercase;
-            margin-top: -400px;
-            text-align: center;
-            font-size: 100px;
-            color: white;
-
+        .googlemap div {
+          padding: 5%;
+          width: 90vw !important;
         }
-        .home > a{
-            text-decoration: none;
-            color: white;
-            /* font-family:sans-serif; */
-        }
-        .container{
-            margin-top: 150px;
-            padding-top: 150px;
-            margin-left: 8%;
-            margin-right: 8%;
-        }
-        .gather{
-            display: grid;
-           grid-template-columns: repeat(4,300px);
-           grid-gap: 60px;
-           margin-bottom:50px;
-        }
-        .container > h1{
-            font-family: inherit;
-            font-weight: 400px;
-            line-height: 1.5;
-        }
-        .information{
-            font-size: 20px;
-           color:rgba(0, 0, 0, 0.705);
-            font-weight: 300;
-            font-family: inherit;
-        }
-        .information > a{
-            text-decoration: None;
-            color:rgba(0, 0, 0, 0.705); ;
-        }
-        .googlemap{
-            display: flex;
-            margin-bottom: 100px;
-           
-        }
-        .world{
-            height: 500px;
-            width: 600px;
-            /* float: left;
-            display: flex;   */
-
-        }
-        #named{
-            /* margin-top: 40px; */
-            
-            /* display: flex;
-            float: left; */
-            /* margin-bottom: 80px; */
-            /* justify-content:space-around; */
-
-
-            /* margin-bottom: 20px;
-            padding:18px 100px;
-            color: white;
-            border: 0.1px solid black;
-            margin-left: 50px; */
-
-            color: white;
-            border: 0.1px solid black;
-            height: 50px;
-            width: 600px;
-            margin-left: 50px;
-            margin-bottom: 30px;
-
-        }
-        #message{
-            /* padding: 150px 70px; */
-            border: 0.1px solid black;
-            width: 600px;
-            margin-left: 50px;
-            height: 220px;
-            margin-bottom: 20px;
-            
-        }
-        ::placeholder{
-
-            font-size: 18px;
-            padding-left: 10px;
-            /* padding-top: -80px; */
-        }
-        #message::placeholder{
-            padding-top: -400px;
-        }
-       
-        .lastmessage{
-            /* justify-content: center; */
-            /* text-align: left; */
-            /* margin: auto; */
-            border-radius: 50px;
-            height: 35px;
-            width: 230px;
-            margin-left: 50px;
-            background-color: orange;
-            text-align: center;
-            padding-top: 15px;
-
-            
-
-        }
-        .lastmessage > a {
-            text-decoration: None;
-            color: white;
-            font-size: 20px;
-
-        }
-        /* #lastmessage::placeholder{
-            text-align: center;
-        } */
-        /* .sendmessage{
-           padding-left: 600px;
-        } */
-      
+      }
     </style>
-</head>
-<body>
-    <div class="maincontainer" style="border: 1px solid red;">
-        <div  class="main">
-            
-            <img src="https://preview.colorlib.com/theme/adventure2/images/bg_1.jpg.webp" alt="" class="contactimg">
-            <div class="blog">
-                <h3  class="home"><a href="#">Home</a></h3>
-                <h3  class="home">Blog</h3>
-
-            </div>
-            <h1 class="contact" style="clear: both;">Contact</h1>
+  </head>
+  <body>
+    <nav id="navBar">
+      <div class="logo">Adventures</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="hotels.html">Hotels</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a class="active" href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <section id="homeSection1">
+      <section>
+        <div class="AllSection1" id="homeSection1Header">
+          <p>
+            <span><a href="home.html">HOME</a></span
+            >&nbsp;<span><a href="contact.html">CONTACT</a></span>
+          </p>
+          <h1>Contact</h1>
         </div>
-       
+      </section>
+    </section>
+    <div class="container1">
+      <h1>Contact Information</h1>
+
+      <div class="gather">
+        <div class="information">
+          Address: 198 West 21th Street, Suite 721 New York NY 10016
+        </div>
+        <div class="information">Phone:<a href="#">+ 1235 235598</a></div>
+        <div class="information">Email:<a href="#">info@yoursite.com</a></div>
+        <div class="information">Website<a href="#">yoursite.com</a></div>
+      </div>
+
+      <div class="googlemap">
+        <div style="width: 50vw">
+          <iframe
+            width="100%"
+            height="400"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+          <a href="https://add-map.com/">embed google maps</a>
+        </div>
+        <div>
+          <form action="" id="mapForm">
+            <input type="text" name="" id="named" placeholder="Your Name" />
+            <input type="email" name="" id="named" placeholder="Your Email" />
+            <input type="text" name="" id="named" placeholder="Subject" />
+            <input
+              type="message"
+              name=""
+              id="message"
+              placeholder="Message"
+              style="padding-top: -700px"
+            />
+            <div class="lastmessage"><a href="#">Send Message</a></div>
+          </form>
+        </div>
+      </div>
     </div>
-    
-   
-    <div class="container">
-        <h1>Contact Information</h1>
 
-    
-        <div class="gather">
-            <div class="information">Address: 198 West 21th Street, Suite 721 New York NY 10016</div>
-            <div class="information">Phone:<a href="#">+ 1235 235598</a></div>
-            <div class="information">Email:<a href="#">info@yoursite.com</a></div>
-            <div class="information">Website<a href="#">yoursite.com</a></div>
+    <div class="containers">
+      <div class="rows">
+        <h5>Subscribe to our Newsletter</h5>
+        <p id="multi">
+          Far for away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in
+        </p>
+        <div class="inputfor">
+          <div class="subscribe">
+            <input
+              type="text"
+              name=""
+              id="names"
+              placeholder="Enter email address"
+            />
+            <input type="submit" name="" id="submit" value="Subscribe" />
+          </div>
         </div>
-
-        <div class="googlemap" >
-            <div style="float:left;">
-                <img src="https://geology.com/world/world-map.gif" alt="" class="world">
-            </div>
-           <div>
-               <form action="">
-                <input type="text" name="" id="named" placeholder="Your Name">
-                <input type="email" name="" id="named" placeholder="Your Email">
-                <input type="text" name="" id="named" placeholder="Subject">
-                <input type="message" name="" id="message" placeholder="Message" style = "padding-top:-700px">
-                <!-- <div class="sendmessage">
-                    <input type="sendmessage" name="" id="lastmessage" value="Send Message">
-                </div> -->
-                <div class="lastmessage"><a href="#">Send Message</a></div>
-    
-
-               </form>
-            
-           </div>
-        </div>
-      
+      </div>
     </div>
-
-   
-    
-</body>
+    <section class="footer">
+      <div class="container">
+        <div class="row" id="bottom">
+          <div class="col c_1">
+            <div class="widget">
+              <h2 class="footheadings">Adventure</h2>
+              <p class="para">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+            <ul class="social">
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col c_2">
+            <div class="widget -2">
+              <h2 class="footheadings _2">Information</h2>
+              <ul class="list l_1" type="None">
+                <li>
+                  <a href="#" class="block">About us</a>
+                </li>
+                <li>
+                  <a href="#" class="block">Online enquiry</a>
+                </li>
+                <li>
+                  <a href="#" class="block">Call Us</a>
+                </li>
+                <li>
+                  <a href="#" class="block">General enquires</a>
+                </li>
+                <li>
+                  <a href="#" class="block">Booking Conditions</a>
+                </li>
+                <li>
+                  <a href="#" class="block">Privacy and Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="block">Refund Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col c_3">
+            <div class="widget-3">
+              <h2 class="footheadings h_3">Experience</h2>
+              <ul class="list l_2" type="None">
+                <li>
+                  <a href="#" class="block">Beach</a>
+                </li>
+                <li>
+                  <a href="#" class="block">Adventure</a>
+                </li>
+                <li>
+                  <a href="#" class="block">Wildlife</a>
+                </li>
+                <li>
+                  <a href="#" class="block">Honeymoon</a>
+                </li>
+                <li>
+                  <a href="#" class="block">Nature</a>
+                </li>
+                <li>
+                  <a href="#" class="block">Party</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col c_4">
+            <div class="widget-4">
+              <h2>Have a Questions?</h2>
+              <ul type="None" class="social1">
+                <li>
+                  <div class="wholesub">
+                    <p class="fake">
+                      <i class="block location fas fa-map-marker-alt"></i>
+                    </p>
+                    <p>
+                      203 Fake St. Mountain View, San Francisco, California, USA
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="wholesub">
+                    <a href="#"
+                      ><p>
+                        <span class="block material-icons-outlined"> call </span
+                        >+2 3923929 210
+                      </p></a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="wholesub">
+                    <a href="#"
+                      ><p>
+                        <i class="block fas fa-envelope"></i>info@yourdomain.com
+                      </p></a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="lastpara">
+            Copyright @2022 All rights reserved | This template is made with
+            <i class="heart fas fa-heart"></i>by <a href="#">Colorlib</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <script
+      type="text/javascript"
+      src="https://embedmaps.com/google-maps-authorization/script.js?id=45d127fdff60331e3241227f9445a66a741737bc"
+    ></script>
+  </body>
 </html>

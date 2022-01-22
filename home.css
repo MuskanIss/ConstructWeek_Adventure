@@ -377,6 +377,61 @@ input[type="checkbox"] {
   font-weight: 200;
   color: orange;
 }
+
+.container2 {
+  width: 85%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 25px;
+}
+.cards {
+  background-color: #fff;
+}
+.image-section {
+  height: 225px;
+  background-color: red;
+}
+.cards .img-one {
+  background-image: url("images/img4\ \(2\).webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards .img-two {
+  background-image: url("images/img4\ \(3\).webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cards .img-three {
+  background-image: url("images/img4\ \(1\).webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#homeSection11 h1 {
+  margin-top: 7%;
+  margin-bottom: 4%;
+  font-family: Marker Felt, fantasy;
+  text-align: center;
+  font-size: 50px;
+  font-weight: normal;
+}
+.content2 {
+  padding: 20px 10px;
+  text-align: center;
+  background-color: #f8faff;
+}
+.content2 p {
+  letter-spacing: 1.5px;
+  font-size: 15px;
+}
+#dat {
+  text-align: left;
+  color: gray;
+  margin-top: 20px;
+}
 @media (max-width: 1000px) {
   nav {
     padding: 0 40px 0 50px;
@@ -538,6 +593,9 @@ input[type="checkbox"] {
   }
   .homeSection6flexreverse:nth-child(2n) {
     flex-direction: column;
+  }
+  .container2 {
+    display: block;
   }
 }
 @media screen and (max-width: 800px) {
@@ -721,5 +779,86 @@ input[type="checkbox"] {
     padding-right: 20px;
     padding-left: 20px;
     margin-top: 5%;
+  }
+}
+
+#homeSection9 .wrapper {
+  background: #08c29a;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "raleway", sans-serif;
+  color: #fff;
+}
+#homeSection9 .wrapper h1 {
+  font-size: 60px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#homeSection9 .wrapper h5 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+#homeSection9 .cards9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+#homeSection9 .card9 {
+  width: 380px;
+  height: 350px;
+  border-radius: 15px;
+  margin: 7px;
+  padding: 20px 30px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+}
+#homeSection9 .card9 img {
+  height: 90px;
+  width: 90px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  top: -40px;
+  left: 10px;
+}
+#homeSection9 .card9 p {
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+#homeSection9 .card9 h2 {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+#homeSection9 .card9 h4 {
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+}
+#homeSection9 .card9 i {
+  font-size: 40px;
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  color: yellow;
+}
+@media (max-width: 768px) {
+  #homeSection9 .cards9 {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #homeSection9 .card9 {
+    margin: 10px;
   }
 }
