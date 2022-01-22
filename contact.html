@@ -25,6 +25,128 @@
     <title>Home</title>
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="home.css" />
+    <style>
+      .contactimg {
+        height: 700px;
+        width: 100%;
+      }
+      .home {
+        margin-top: -450px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-right: 20px;
+        text-transform: uppercase;
+      }
+      .blog {
+        display: flex;
+        justify-content: center;
+
+        z-index: 99;
+      }
+      .main > h1 {
+        justify-content: center;
+        text-transform: uppercase;
+        margin-top: -400px;
+        text-align: center;
+        font-size: 100px;
+        color: white;
+      }
+      .home > a {
+        text-decoration: none;
+        color: white;
+      }
+      .container1 {
+        margin-top: 50px;
+      }
+      .gather {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        font-size: 14px;
+        margin-bottom: 50px;
+        width: 100vw;
+      }
+      .container1 > h1 {
+        font-family: inherit;
+        font-weight: 400px;
+        line-height: 1.5;
+      }
+      .information {
+        color: rgba(0, 0, 0, 0.705);
+        font-weight: 300;
+        font-family: inherit;
+      }
+      .information > a {
+        text-decoration: None;
+        color: rgba(0, 0, 0, 0.705);
+      }
+      .googlemap {
+        display: flex;
+        margin-bottom: 100px;
+        justify-content: space-around;
+      }
+      .world {
+        height: auto;
+        width: 50vw;
+      }
+      #named {
+        color: white;
+        border: 0.1px solid black;
+        height: 50px;
+        width: 600px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+      }
+      #message {
+        border: 0.1px solid black;
+        width: 600px;
+        margin-left: 50px;
+        height: 220px;
+        margin-bottom: 20px;
+      }
+      ::placeholder {
+        font-size: 18px;
+        padding-left: 10px;
+      }
+      #message::placeholder {
+        padding-top: -400px;
+      }
+
+      .lastmessage {
+        border-radius: 50px;
+        height: 35px;
+        width: 230px;
+        margin-left: 50px;
+        background-color: orange;
+        text-align: center;
+        padding-top: 15px;
+      }
+      .lastmessage > a {
+        text-decoration: None;
+        color: white;
+        font-size: 20px;
+      }
+      #mapForm {
+        width: 45vw;
+      }
+      #mapForm input {
+        width: 70%;
+      }
+      @media (max-width: 768px) {
+        .gather {
+          display: block;
+        }
+        .googlemap {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .googlemap div {
+          padding: 5%;
+          width: 90vw !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav id="navBar">
@@ -53,6 +175,50 @@
         </div>
       </section>
     </section>
+    <div class="container1">
+      <h1>Contact Information</h1>
+
+      <div class="gather">
+        <div class="information">
+          Address: 198 West 21th Street, Suite 721 New York NY 10016
+        </div>
+        <div class="information">Phone:<a href="#">+ 1235 235598</a></div>
+        <div class="information">Email:<a href="#">info@yoursite.com</a></div>
+        <div class="information">Website<a href="#">yoursite.com</a></div>
+      </div>
+
+      <div class="googlemap">
+        <div style="width: 50vw">
+          <iframe
+            width="100%"
+            height="400"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+          <a href="https://add-map.com/">embed google maps</a>
+        </div>
+        <div>
+          <form action="" id="mapForm">
+            <input type="text" name="" id="named" placeholder="Your Name" />
+            <input type="email" name="" id="named" placeholder="Your Email" />
+            <input type="text" name="" id="named" placeholder="Subject" />
+            <input
+              type="message"
+              name=""
+              id="message"
+              placeholder="Message"
+              style="padding-top: -700px"
+            />
+            <div class="lastmessage"><a href="#">Send Message</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <div class="containers">
       <div class="rows">
         <h5>Subscribe to our Newsletter</h5>
@@ -195,6 +361,9 @@
         </div>
       </div>
     </section>
-    <!-- <script src="home.js" type="text/javascript"></script> -->
+    <script
+      type="text/javascript"
+      src="https://embedmaps.com/google-maps-authorization/script.js?id=45d127fdff60331e3241227f9445a66a741737bc"
+    ></script>
   </body>
 </html>
