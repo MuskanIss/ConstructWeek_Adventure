@@ -136,14 +136,32 @@
       @media (max-width: 768px) {
         .gather {
           display: block;
+          margin-left: 10px;
         }
         .googlemap {
           display: flex;
           flex-direction: column-reverse;
         }
-        .googlemap div {
+       .googlemap > #continentmap {
           padding: 5%;
           width: 90vw !important;
+
+        }
+        .lastmessage{
+          height: 35px;
+          width: 250px;
+          padding-top: 0px;
+          /* margin: 0px; */
+        }
+
+
+        #mapForm {
+        width: 100%;
+        margin: 0px;
+        }
+        #mapForm input {
+          width: 90%;
+          margin-left: 20px;
         }
       }
     </style>
@@ -188,7 +206,7 @@
       </div>
 
       <div class="googlemap">
-        <div style="width: 50vw">
+        <div style="width: 50vw" id="continentmap">
           <iframe
             width="100%"
             height="400"
@@ -201,7 +219,7 @@
           ></iframe>
           <a href="https://add-map.com/">embed google maps</a>
         </div>
-        <div>
+        <div class="continent">
           <form action="" id="mapForm">
             <input type="text" name="" id="named" placeholder="Your Name" />
             <input type="email" name="" id="named" placeholder="Your Email" />
@@ -213,7 +231,11 @@
               placeholder="Message"
               style="padding-top: -700px"
             />
-            <div class="lastmessage"><a href="#">Send Message</a></div>
+            <div>
+              <div class="lastmessage"><a href="#">Send Message</a></div>
+            </div>
+            
+            
           </form>
         </div>
       </div>
