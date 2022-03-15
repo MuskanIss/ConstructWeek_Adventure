@@ -1,0 +1,7 @@
+# ConstructWeek_Adventure
+
+###Trip planner with best places to visit and hotels for stay
+
+- Executed in under 1 week with a team of 4
+- Used HTML,CSS,JAVASCRIPT
+- Responsible for collaborating with team and worked on home page of website
