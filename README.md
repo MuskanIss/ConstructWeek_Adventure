@@ -1,7 +1,7 @@
 
 # Adventure Clone 🌇
 
-Adventurec - Discover a new place. Find great places to stay, eat, shop, or visit from local experts. 
+Adventure clone - Discover a new place. Find great places to stay, eat, shop, or visit from local experts. 
 
 
 ## Tech Stack Used 👩‍💻
