@@ -46,7 +46,7 @@ Deployed Link: [Adventure Link](https://construct-week-adventure.vercel.app/)
 
 ## Authors 🤝
 
+- [@chandu806](https://github.com/chandu806)
 - [@MuskanIss](https://github.com/MuskanIss)
 - [@MD-Malik](https://github.com/MD-Malik)
-- [@chandu806](https://github.com/chandu806)
 - [@Ketan281](https://github.com/Ketan281)
